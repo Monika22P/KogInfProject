@@ -1,0 +1,13 @@
+PART_ID,Block_no,Trial_no,Session_name,Reaction_time,Key_pressed,Stimulus_type,Corr_in_trial
+TestK21,-1,1,training,1.2675316999666393,l,P D B P D,Poprawnie
+TestK21,-1,2,training,1.4336884999647737,l,X X V X X,Poprawnie
+TestK21,-1,3,training,1.1673437000717968,l,P D V P D,Poprawnie
+TestK21,-1,4,training,0.7541357998270541,a,X X C X X,Poprawnie
+TestK21,-1,5,training,0.8332279999740422,a,C C X C C,Poprawnie
+TestK21,-1,6,training,1.1340595001820475,l,B B B B B,Poprawnie
+TestK21,0,7,experiment,1.0835464000701904,a,N Z X N Z
+TestK21,0,8,experiment,1.6204013000242412,a,V V X V V
+TestK21,0,9,experiment,1.282967699924484,a,N Z C N Z
+TestK21,1,10,experiment,0.8367010001093149,a,B B C B B
+TestK21,1,11,experiment,0.9544045000802726,l,P D B P D
+TestK21,1,12,experiment,1.1336309998296201,a,X X C X X
