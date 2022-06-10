@@ -1,0 +1,26 @@
+INSTRUKCJA WYKONANIA ZADANIA
+
+
+Za chwilę na ekranie pojawi się 5 liter ustawionych obok siebie w jednym rzędzie. Twoim
+zadaniem będzie reagować na literę która wyświetla się w środku.
+
+Jeżeli literą środkową będzie X lub C, naciśnij proszę literę A na klawiaturze.
+Jeżeli literą środkową będzie V lub B, naciśnij proszę literę L na klawiaturze.
+
+Przykład:
+
+Jeżeli widzisz ciąg liter XXCXX, powinieneś nacisnąć literę A na klawiaturze.
+Jeżeli widzisz ciąg liter XXBXX, powinieneś nacisnąć literę L na klawiaturze.
+
+Litery A i L na klawiaturze wybrane zostały jako odnośniki do pozycji „lewa” i „prawa”.
+
+Postaraj się reagować poprawnie i jak najszybciej, ponieważ mierzony będzie czas Twojej
+reakcji.
+
+
+Zanim rozpocznie się sesja eksperymentalna, wyświetlona zostanie sesja treningowa, tak byś
+mógł/mogła oswoić się z zadaniem. Po każdej Twojej odpowiedzi podczas sesji treningowej,
+zostaniesz poinformowany o tym czy Twoja odpowiedź była poprawna czy błędna. Podczas
+sesji eksperymentalnej informacja o poprawności nie będzie się pojawiać.
+
+Aby przejść dalej, naciśnij spację.
