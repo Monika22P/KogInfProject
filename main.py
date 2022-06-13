@@ -46,14 +46,14 @@ def read_text_from_file(file_name, insert=''):
     return ''.join(msg)
 
 
-def check_exit(send_key, stop_key):
+def check_exit(key='esc'):
     """
     Check (during procedure) if experimentator doesn't want to terminate.
     """
-    #stop = event.getKeys(keyList=[key])
-    if send_key == stop_key:
+    stop = event.getKeys(keyList=[key])
+    if stop:
         abort_with_error(
-            'Experiment finished by user! {} pressed.'.format(stop_key))
+            'Experiment finished by user! {} pressed.'.format(key))
 
 
 def show_info(win, file_name, insert=''):
@@ -92,7 +92,7 @@ def main():
 
     # === Dialog popup ===
     info = {'IDENTYFIKATOR': '', u'P\u0141EC': ['M', "K", "NB"], 'WIEK': '18'}
-    dictDlg = gui.DlgFromDict(dictionary=info, title='Test Flankerów, podaj swoje dane:')
+    dictDlg = gui.DlgFromDict(dictionary=info, title='Test FlankerÃ³w, podaj swoje dane:')
     if not dictDlg.OK:
         abort_with_error('Info dialog terminated.')
 
@@ -189,40 +189,41 @@ def main():
 
 
 def run_trial(win, conf, clock, fix_cross, stim, reminder):
+    
+    while not check_exit():
+    
+        # === Prepared trial-related stimulus ===
+        stim.text = random.choice(conf['STIM_TYPES'])
 
-    # === Prepared trial-related stimulus ===
-    stim.text = random.choice(conf['STIM_TYPES'])
+        # === Start pre-trial stuff===
+        for _ in range(conf['FIX_CROSS_TIME']):
+            fix_cross.draw()
+            reminder.draw()
+            win.flip()
 
-    # === Start pre-trial stuff===
-    for _ in range(conf['FIX_CROSS_TIME']):
-        fix_cross.draw()
-        reminder.draw()
-        win.flip()
+        # === Start trial ===
+        event.clearEvents()
+        # making sure that clock will be reset exactly when stimuli will be drawn
+        win.callOnFlip(clock.reset)
 
-    # === Start trial ===
-    event.clearEvents()
-    # making sure that clock will be reset exactly when stimuli will be drawn
-    win.callOnFlip(clock.reset)
+        for _ in range(conf['STIM_TIME']):  # present stimuli
+            reaction = event.getKeys(keyList=list(conf['REACTION_KEYS']), timeStamped=clock)
+            if reaction:  # break if any button was pressed
+                break
+            reminder.draw()
+            stim.draw()
+            win.flip()
 
-    for _ in range(conf['STIM_TIME']):  # present stimuli
-        reaction = event.getKeys(keyList=list(conf['REACTION_KEYS']), timeStamped=clock)
-        if reaction:  # break if any button was pressed
-            break
-        reminder.draw()
-        stim.draw()
-        win.flip()
+        # === Trial ended, prepare data for send  ===
+        if reaction:
+            key_pressed, rt = reaction[0]
+            stim_type = stim.text
+        else:  # timeout
+            key_pressed = 'no_key'
+            rt = -1.0
+            stim_type = stim.text
 
-    # === Trial ended, prepare data for send  ===
-    if reaction:
-        check_exit(reaction[0][0], 'esc')
-        key_pressed, rt = reaction[0]
-        stim_type = stim.text
-    else:  # timeout
-        key_pressed = 'no_key'
-        rt = -1.0
-        stim_type = stim.text
-
-    return key_pressed, rt, stim_type  # return all data collected during trial
+      return key_pressed, rt, stim_type  # return all data collected during trial
 
 
 if __name__ == '__main__':
