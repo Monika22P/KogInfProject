@@ -92,7 +92,7 @@ def main():
 
     # === Dialog popup ===
     info = {'IDENTYFIKATOR': '', u'P\u0141EC': ['M', "K", "NB"], 'WIEK': '18'}
-    dictDlg = gui.DlgFromDict(dictionary=info, title='Test Flankerów, podaj swoje dane:')
+    dictDlg = gui.DlgFromDict(dictionary=info, title='Test FlankerÃ³w, podaj swoje dane:')
     if not dictDlg.OK:
         abort_with_error('Info dialog terminated.')
 
@@ -178,6 +178,7 @@ def main():
             RESULTS.append([PART_ID, block_no, trial_no, 'experiment', rt, key_pressed, stim_type])
             trial_no += 1
             for _ in range(conf['BREAK_TIME']):
+                check_exit()
                 reminder.draw()
                 win.flip()
         if block_no != conf['NO_BLOCKS']-1:
