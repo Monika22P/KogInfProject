@@ -134,7 +134,7 @@ def main():
     
         # checking if the answer were correct
         if rt == -1.0:
-            corr = "Nie wciśnięto żadnego przycisku!"
+            corr = "Niepoprawnie - brak przycisku"
         elif len(stim_type) > 5:       
             if key_pressed == 'a' and (stim_type.find("X", 4, 5) != -1 or stim_type.find("C", 4, 5) != -1):
                 corr = "Poprawnie"
