@@ -27,9 +27,6 @@ def read_text_from_file(file_name, insert=''):
     """
     Method that read message from text file, and optionally add some
     dynamically generated info.
-    :param file_name: Name of file to read
-    :param insert:
-    :return: message
     """
     if not isinstance(file_name, str):
         logging.error('Problem with file reading, filename must be a string')
@@ -59,8 +56,6 @@ def check_exit(key='esc'):
 def show_info(win, file_name, insert=''):
     """
     Clear way to show info message into screen.
-    :param win:
-    :return:
     """
     msg = read_text_from_file(file_name, insert=insert)
     msg = visual.TextStim(win, color='black', text=msg,
@@ -135,33 +130,26 @@ def main():
 
         # calling run_trial function and saving data that it returns
         key_pressed, rt, stim_type = run_trial(win, conf, clock, fix_cross, stim, reminder)
+       
+    
         # checking if the answer were correct
-
         if rt == -1.0:
             corr = "Nie wciśnięto żadnego przycisku!"
-            
-    # === mało elegancki, ale działający sposób sprawdzania poprawności ===
-        elif len(stim_type) > 5:        #sprawdzamy długość bodźca, tutaj trafią te z pięciu liter i czterech spacji między nimi np. X X C X X
-            #funkcja find("X", 4, 5) szuka wyrażenia X, zaczyna na czwartej pozycji całego wyrazu (pierwsza litera jest na pozycji 0; spacje też się liczą!), kończy przed piątą pozycją (czyli sprawdzi tylko czwartą)
-            #sprawdza po kolei każdą pozycję (u nas tylko czwartą) i zwraca numer pozycji na której jest wyrażenie (u nas X); jeśli nie znajdzie zwraca -1
-            
+        elif len(stim_type) > 5:       
             if key_pressed == 'a' and (stim_type.find("X", 4, 5) != -1 or stim_type.find("C", 4, 5) != -1):
-                #użytkownik wcisnął 'a', i bodziec był taki że "X" lub "C" było w nim na przeszukiwanych pozycjach (jeśli nie było zwróciłoby -1; w warunku jest że ma się NIE RÓWNAĆ -1)
                 corr = "Poprawnie"
             elif key_pressed == 'l' and (stim_type.find("B", 4, 5) != -1 or stim_type.find("V", 4, 5) != -1):
-                #to samo tylko dla praego przycisku
                 corr = "Poprawnie"
             else:
                 corr = "Niepoprawnie"
-                
-        else:       #tutaj są bodźce składające się z jednej literki
-            #funkcja find zaczyna na zerowej pozycji i kończy przed pierwszą (czyli sprawdzi tylko zerową pozycję)
+        else:    
             if key_pressed == 'a' and (stim_type.find("X", 0, 1) != -1 or stim_type.find("C", 0, 1) != -1):
                 corr = "Poprawnie"
             elif key_pressed == 'l' and (stim_type.find("B", 0, 1) != -1 or stim_type.find("V", 0, 1) != -1):
                 corr = "Poprawnie"
             else:
                 corr = "Niepoprawnie"
+                
         # adding user result to the global list with data
         RESULTS.append([PART_ID, '-1', trial_no, 'training', rt, key_pressed, stim_type, corr])
 
@@ -214,7 +202,6 @@ def run_trial(win, conf, clock, fix_cross, stim, reminder):
 
     # === Start trial ===
     event.clearEvents()
-    # making sure that clock will be reset exactly when stimuli will be drawn
     win.callOnFlip(clock.reset)
 
     for _ in range(conf['STIM_TIME']):  # present stimuli
