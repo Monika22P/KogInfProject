@@ -1,0 +1,141 @@
+PART_ID,Block_no,Trial_no,Session_name,Reaction_time,Key_pressed,Stimulus_type,Corr_in_trial
+TestRunning1K21,-1,1,training,2.382960500000081,a,C,Poprawnie
+TestRunning1K21,-1,2,training,1.3505599000000075,a,C C X C C,Poprawnie
+TestRunning1K21,-1,3,training,1.1851606000000174,l,X X C X X,Niepoprawnie
+TestRunning1K21,-1,4,training,1.9000691999999617,a,B,Niepoprawnie
+TestRunning1K21,-1,5,training,-1.0,no_key,V V B V V,Niepoprawnie - brak przycisku
+TestRunning1K21,-1,6,training,0.7669211000002178,l,B B V B B,Poprawnie
+TestRunning1K21,-1,7,training,0.9999526999999944,l,B B V B B,Poprawnie
+TestRunning1K21,-1,8,training,0.8831519000000299,l,O G C G O,Niepoprawnie
+TestRunning1K21,-1,9,training,0.9330758000000969,l,P D V P D,Poprawnie
+TestRunning1K21,-1,10,training,0.8670619999998053,l,C,Niepoprawnie
+TestRunning1K21,-1,11,training,0.9840883000001668,l,C C B C C,Poprawnie
+TestRunning1K21,-1,12,training,1.4669528999997965,a,X,Poprawnie
+TestRunning1K21,0,13,experiment,1.3835959999996703,a,X
+TestRunning1K21,0,14,experiment,0.5500618000000941,l,C
+TestRunning1K21,0,15,experiment,0.8503811999999016,l,X X V X X
+TestRunning1K21,0,16,experiment,0.8666125999998258,l,C C X C C
+TestRunning1K21,0,17,experiment,0.6996187999998256,l,B B V B B
+TestRunning1K21,0,18,experiment,0.716960900000231,l,N Z B N Z
+TestRunning1K21,0,19,experiment,0.6838345999999547,l,C C X C C
+TestRunning1K21,0,20,experiment,0.7855475999999726,l,P D V P D
+TestRunning1K21,0,21,experiment,0.8352970999999343,l,B B X B B
+TestRunning1K21,0,22,experiment,0.800168599999779,l,X X X X X
+TestRunning1K21,0,23,experiment,0.8171407999998337,l,X
+TestRunning1K21,0,24,experiment,0.7529000000004089,l,N Z C N Z
+TestRunning1K21,0,25,experiment,0.8167766000001393,l,P D V P D
+TestRunning1K21,0,26,experiment,0.7671322000001055,l,B B X B B
+TestRunning1K21,0,27,experiment,0.7199964000001273,l,X X C X X
+TestRunning1K21,0,28,experiment,0.21717910000006668,l,N Z B N Z
+TestRunning1K21,0,29,experiment,0.5173752999999124,l,B B V B B
+TestRunning1K21,0,30,experiment,0.5834519,l,B B C B B
+TestRunning1K21,0,31,experiment,0.6691193999999996,l,C C V C C
+TestRunning1K21,0,32,experiment,0.6837725000000319,l,V V X V V
+TestRunning1K21,0,33,experiment,0.7334657999999763,l,P D B P D
+TestRunning1K21,0,34,experiment,0.6668605999998363,l,B B V B B
+TestRunning1K21,0,35,experiment,0.6839543999999478,l,N Z V N Z
+TestRunning1K21,0,36,experiment,0.666680499999984,a,V V C V V
+TestRunning1K21,0,37,experiment,0.800046299999849,a,P D V P D
+TestRunning1K21,0,38,experiment,0.6837696000002325,a,N Z X N Z
+TestRunning1K21,0,39,experiment,0.7508622000000287,a,V V B V V
+TestRunning1K21,0,40,experiment,0.6502980000000207,a,B B X B B
+TestRunning1K21,0,41,experiment,0.6668197999997574,a,V V C V V
+TestRunning1K21,0,42,experiment,0.6838206000002174,a,X
+TestRunning1K21,0,43,experiment,0.6339265000001433,a,B B B B B
+TestRunning1K21,0,44,experiment,0.6996509999999034,a,C C C C C
+TestRunning1K21,1,45,experiment,0.7507682000000386,a,C C V C C
+TestRunning1K21,1,46,experiment,0.2671791000002486,a,B B C B B
+TestRunning1K21,1,47,experiment,0.08378849999962767,a,N Z X N Z
+TestRunning1K21,1,48,experiment,0.28620470000032583,a,B B X B B
+TestRunning1K21,1,49,experiment,0.41697519999979704,a,B B X B B
+TestRunning1K21,1,50,experiment,0.4335555000002387,a,V V B V V
+TestRunning1K21,1,51,experiment,0.5173504999997931,a,X X C X X
+TestRunning1K21,1,52,experiment,0.567512799999804,a,V V X V V
+TestRunning1K21,1,53,experiment,0.40196100000002843,a,C C X C C
+TestRunning1K21,1,54,experiment,0.5165071000001262,a,V V B V V
+TestRunning1K21,1,55,experiment,0.4833432999998877,a,C C B C C
+TestRunning1K21,1,56,experiment,0.9010044999999991,a,P D V P D
+TestRunning1K21,1,57,experiment,0.5336196999996901,a,V
+TestRunning1K21,1,58,experiment,1.0838900000003377,a,C C X C C
+TestRunning1K21,1,59,experiment,0.6187150000000656,a,B B V B B
+TestRunning1K21,1,60,experiment,1.1667287000000215,a,C
+TestRunning1K21,1,61,experiment,0.5005891000000702,a,O G C G O
+TestRunning1K21,1,62,experiment,0.4171820999999909,a,X
+TestRunning1K21,1,63,experiment,0.6509950999998182,a,C C C C C
+TestRunning1K21,1,64,experiment,1.9358234999999695,a,N Z V N Z
+TestRunning1K21,1,65,experiment,1.3524474999999256,a,C C B C C
+TestRunning1K21,1,66,experiment,0.716432000000168,a,X X V X X
+TestRunning1K21,1,67,experiment,0.8169302999999672,a,X X V X X
+TestRunning1K21,1,68,experiment,0.5337266999999883,a,V
+TestRunning1K21,1,69,experiment,0.5000560999997106,a,P D B P D
+TestRunning1K21,1,70,experiment,0.5340166999999383,a,X X X X X
+TestRunning1K21,1,71,experiment,0.10218480000003183,a,N Z B N Z
+TestRunning1K21,1,72,experiment,0.7505519000001186,a,X
+TestRunning1K21,1,73,experiment,0.43582000000014887,a,X
+TestRunning1K21,1,74,experiment,0.36721159999979136,a,X X X X X
+TestRunning1K21,1,75,experiment,0.4323327000001882,a,B
+TestRunning1K21,1,76,experiment,0.4838386999999784,a,O G C G O
+TestRunning1K21,2,77,experiment,0.5002030999999079,a,N Z V N Z
+TestRunning1K21,2,78,experiment,0.33340709999993123,a,X
+TestRunning1K21,2,79,experiment,0.10101100000019869,a,O G C G O
+TestRunning1K21,2,80,experiment,0.6166877999999087,a,B B B B B
+TestRunning1K21,2,81,experiment,0.535352100000182,a,X X B X X
+TestRunning1K21,2,82,experiment,0.5501314999996794,a,N Z C N Z
+TestRunning1K21,2,83,experiment,0.56718439999986,a,N Z V N Z
+TestRunning1K21,2,84,experiment,0.6335813000000599,a,B B B B B
+TestRunning1K21,2,85,experiment,0.7334783000001153,a,C C B C C
+TestRunning1K21,2,86,experiment,0.3501719000000776,a,X X B X X
+TestRunning1K21,2,87,experiment,0.39989909999985684,a,V V C V V
+TestRunning1K21,2,88,experiment,0.6171131999999488,a,V V X V V
+TestRunning1K21,2,89,experiment,0.019258799999988696,a,O G X O G
+TestRunning1K21,2,90,experiment,0.7999998999998752,a,O G X O G
+TestRunning1K21,2,91,experiment,0.7337560999999369,a,X X B X X
+TestRunning1K21,2,92,experiment,0.5339427999997497,a,N Z V N Z
+TestRunning1K21,2,93,experiment,0.6514271999999437,a,B
+TestRunning1K21,2,94,experiment,0.6839922999997725,a,P D B P D
+TestRunning1K21,2,95,experiment,1.1001617000001715,a,N Z V N Z
+TestRunning1K21,2,96,experiment,0.3172335999997813,a,X X X X X
+TestRunning1K21,2,97,experiment,2.5333921000001283,a,C C B C C
+TestRunning1K21,2,98,experiment,0.8498469999999543,a,N Z V N Z
+TestRunning1K21,2,99,experiment,0.5660722000002352,a,N Z X N Z
+TestRunning1K21,2,100,experiment,0.5833984000000783,a,N Z B N Z
+TestRunning1K21,2,101,experiment,0.3166417000002184,l,C C V C C
+TestRunning1K21,2,102,experiment,0.41676439999992,l,P D V P D
+TestRunning1K21,2,103,experiment,1.2675697999998192,a,O G C G O
+TestRunning1K21,2,104,experiment,0.5339328000000023,l,V V V V V
+TestRunning1K21,2,105,experiment,1.183398500000294,a,X X X X X
+TestRunning1K21,2,106,experiment,1.050001600000087,a,V V X V V
+TestRunning1K21,2,107,experiment,0.8670703999996476,a,C C C C C
+TestRunning1K21,2,108,experiment,2.5332641999998486,l,V V V V V
+TestRunning1K21,3,109,experiment,0.9999861000001147,l,P D B P D
+TestRunning1K21,3,110,experiment,0.884041199999956,l,X X V X X
+TestRunning1K21,3,111,experiment,0.7011042999997699,l,C C V C C
+TestRunning1K21,3,112,experiment,0.7335452000002078,l,B B B B B
+TestRunning1K21,3,113,experiment,0.7503388999998606,l,P D B P D
+TestRunning1K21,3,114,experiment,0.6833992999995644,a,B B X B B
+TestRunning1K21,3,115,experiment,0.8169430000002649,a,C C X C C
+TestRunning1K21,3,116,experiment,0.7169801000000007,l,X X V X X
+TestRunning1K21,3,117,experiment,0.6835034000000633,l,X X V X X
+TestRunning1K21,3,118,experiment,0.7329689000002872,a,X
+TestRunning1K21,3,119,experiment,0.8002364000003581,a,O G C G O
+TestRunning1K21,3,120,experiment,0.9504723000000013,a,O G X O G
+TestRunning1K21,3,121,experiment,0.7167144999998527,l,C C B C C
+TestRunning1K21,3,122,experiment,0.70209849999992,a,P D V P D
+TestRunning1K21,3,123,experiment,0.716849700000239,l,C C B C C
+TestRunning1K21,3,124,experiment,0.7834008999998332,l,C C B C C
+TestRunning1K21,3,125,experiment,0.7833716000000095,a,C C C C C
+TestRunning1K21,3,126,experiment,0.7006704000000354,l,P D V P D
+TestRunning1K21,3,127,experiment,0.8168331000001672,l,V V V V V
+TestRunning1K21,3,128,experiment,0.8504171999998107,l,X X B X X
+TestRunning1K21,3,129,experiment,0.7836032000000159,l,V V B V V
+TestRunning1K21,3,130,experiment,1.0674164000001838,a,N Z X N Z
+TestRunning1K21,3,131,experiment,0.750689599999987,l,C C B C C
+TestRunning1K21,3,132,experiment,0.7508263999998235,a,O G C G O
+TestRunning1K21,3,133,experiment,0.7006085999996685,l,V V C V V
+TestRunning1K21,3,134,experiment,0.917094299999917,a,X X V X X
+TestRunning1K21,3,135,experiment,0.8839786999997159,l,V V V V V
+TestRunning1K21,3,136,experiment,0.7003693000001476,l,V V B V V
+TestRunning1K21,3,137,experiment,0.9500103999998828,l,X X V X X
+TestRunning1K21,3,138,experiment,0.8837422999999944,a,V V C V V
+TestRunning1K21,3,139,experiment,0.8000395999997636,a,X X C X X
+TestRunning1K21,3,140,experiment,0.8502549999998337,a,X
